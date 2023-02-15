@@ -44,9 +44,9 @@ local nmap = function(keys, func, desc)
 
     vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
   end
---neo-tree
-nmap('<leader>e', "<cmd>Neotree toggle<cr>", 'toggle explorer')
-nmap('<leadwe>o', "<cmd>Neotree focus<cr>", 'focus explorer')
+--nvim-tree
+nmap('<leader>e', "<cmd>NvimTreeToggle<cr>", 'toggle explorer')
+nmap('<leader>o', "<cmd>NvimTreeFocus<cr>", 'focus explorer')
 --buffers
 nmap('<S-l>', "<cmd>bnext<cr>", 'Next buffer tab')
 nmap('<S-h>', "<cmd>bprevious<cr>", 'Prev buffer tab')
